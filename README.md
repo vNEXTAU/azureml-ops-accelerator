@@ -9,7 +9,7 @@ Use the Table of Contents below to help you navigate to the section of repo that
 
 |**Stage**|**Tasks &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;**|**Roles**|
 | ---------------------| --------------------- | ----------- |
-| **1- MLOps Foundation** | Understanding MLOps <br />· What’s DevOps?<br />· What’s MLOps? | Everyone |
+| **1- MLOps Foundation** | Understanding MLOps <br />· [What’s DevOps?](/1-MLOpsFoundations/0-DevOpsOverview/README.md)<br />· [What’s MLOps?](/1-MLOpsFoundations/1-MLOpsOverview/README.md) | Everyone |
 | | Understand Maturity Model <br />· Determine org capability level <br />· Culture and Key Principles | Group Manager, Team Lead, Project Lead |
 | | Team formation <br />· Skills, Roles, and Responsibilities<br />· Deciding on (agile) Delivery model   | Everyone  |
 | | **Deliverables**<br />· Review the checklist |
