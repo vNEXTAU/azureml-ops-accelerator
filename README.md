@@ -2,14 +2,46 @@
 
 Guided accelerator consolidating best practice patterns, IaaC and AML code artefacts to provide reference IP to a support a baseline MLOps implementation on Azure leveraging Azure ML that can be delivered in approximately 12 weeks of project scope. 
 
-This repo is designed to be consumed 'documentation led', with the relevant IaaC or implementation code artefacts linked at the appropriate sections. Start here: <https://microsoft.github.io/azureml-ops-accelerator/>
+This repo is designed to be consumed 'documentation led', with the relevant IaaC or implementation code artefacts linked at the appropriate sections. 
 
-To go directly to understand how to apply this repository to your own Azure ML - Ops implementation project, go here: https://microsoft.github.io/azureml-ops-accelerator/0-GettingStarted/
+Use the Table of Contents below to help you navigate to the section of repo that you are interested in based on your role or the stage of your project. 
 
-**Cloning this Repository**
-> This Repository makes use of [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) to reuse existing code artefacts and templates. If you clone this repo locally, the content in submodule specific folders don't get automatically copied over. To include these in your local clone, do as below (all steps on your local machine):
-> 1) Clone this project: **git clone https://github.com/microsoft/azureml-ops-accelerator.git**
-> 2) Next initiate and update your submodules using **git submodule init** and **git submodule update**
+
+|**Stage**|**Tasks &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;**|**Roles**|
+| ---------------------| --------------------- | ----------- |
+| **1- MLOps Foundation** | Understanding MLOps <br />· What’s DevOps?<br />· What’s MLOps? | Everyone |
+| | Understand Maturity Model <br />· Determine org capability level <br />· Culture and Key Principles | Group Manager, Team Lead, Project Lead |
+| | Team formation <br />· Skills, Roles, and Responsibilities<br />· Deciding on (agile) Delivery model   | Everyone  |
+| | **Deliverables**<br />· Review the checklist |
+| **2- Design and Provision Infrastructure** | Design and approve Infrastructure<br />· Understand Key Architecture & A/ML concepts<br />· Technology Choices (Decision Tree)<br />· Review Reference Architecture<br />· Map team Roles to RBAC<br />· Seek approval | Team Lead, Solution Architect |
+| |  Configuring Access Control<br />· Secure access to AML with RBAC<br />· Use Custom Roles when required | Solution Architect, Azure Infrastructure Engineer, Team Lead |
+| | Security control for Service Infrastructure<br />· Use vNEXT Integrate & Private Link for AML | Solution Architect, Azure Infrastructure Engineer, Team Lead |
+| | Infrastructure Costs Control<br />· Set Budgets and spending alerts<br />· AML Cost Optimisation guide| Solution Architect, Azure Infrastructure Administrator, Team Lead |
+| |  **Deliverables**<br />· Approved Solution Design<br />· Review the checklist|
+| **3- Deploy Services & Setup Environment**| Accelerate code deployment for Azure ML Services<br />· Automate the deployment of resources<br />· Update the deployment scripts to match the approved Solution Design | Azure Infrastructure Engineer, DevOps Engineer, Team Lead |
+| | Setting up local environment for development<br />· Install tools<br />· Connect to AML | Data Scientist, MLOps Engineer, Data Engineer |
+| | Organise Azure ML environments | MLOps Engineer, DevOps Engineer |
+| | Creating separate environments (Dev, Test, Prod) | MLOps Engineer, DevOps Engineer |
+| | **Deliverables**<br />· Full deployed services on Azure using Automated pipelines<br />· Review the checklist |
+| **4- Migrate to AML**| Migrate existing ML experiment to Azure ML| MLOps Engineer |
+| **5- Prepare data** | Prepare your dataset(s) | Data Engineer, Data Scientist |
+| | Registering dataset(s) online<br />· Create AML Datastore<br />· Create AML Experiment<br />· Register datasets<br />· Secure access to datasets | |
+| | **Deliverables**<br />· Data is traceable in AML datastores<br />· Review the checklist|
+| **6- Build ML models** | Build ML model(s)<br />· Build your ML models locally<br />· Create experiments in AML<br />· Register models in AML along with data, experiment details, etc<br /><br />Validate ML Models<br />· Unit / Integration test ML model<br />· Audit model integrity<br /><br />Train ML models<br />· Create AML pipelines to auto train models<br />· Automate the deployment of AML pipelines<br /><br />Deploy ML models | Data Scientist, Data Engineer, MLOps Engineer, DevOps Engineer |
+| |**Deliverables**<br />· Models are versioned and recorded in AML<br />· Review the checklist  |
+| **7- Monitoring** | Monitor model performances | MLOps Engineer, DevOps Engineer                                |
+|| Watch for data drifts | MLOps Engineer, DevOps Engineer, Data Engineer |
+|| Audit machine learning workflows | MLOps Engineer, DevOps Engineer |
+| | Auto-trigger AML training pipelines by Monitoring events | MLOps Engineer, DevOps Engineer, Data Engineer  |
+| | **Deliverables**<br />· Review the checklist |
+
+
+
+
+
+
+
+
 
 ## Contributing 
 
