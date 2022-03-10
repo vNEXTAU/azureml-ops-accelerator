@@ -15,9 +15,10 @@ An Azure Machine Learning pipeline is an independently executable workflow of a 
 
 Time-consuming steps can be done only when their input changes. A change to the training script may be run without redoing the data loading and preparation steps. Separate steps can use different compute type/sizes for each steps. Independent steps allow multiple data scientists to work on the same pipeline at the same time without over-taxing compute resources.
 
-To create Azure pipeline, see [Create the pipeline](https://docs.microsoft.com/en-us/azure/devops/pipelines/targets/azure-machine-learning?context=azure%2Fmachine-learning%2Fcontext%2Fml-context&view=azure-devops&tabs=yaml).
+![run-experiment-as-pipeline](run_an_experiment_as_a_pipeline.png)
 
-To create Azure pipeline with the Azure Machine Learning SDK, see [Create and run machine learning pipelines with Azure Machine Learning SDK](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-create-machine-learning-pipelines?view=azure-devops).
-
-To create with the Azure Machine Learning CLI, see [Create and run machine learning pipelines using components with the Azure Machine Learning CLI (Preview)](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-create-component-pipelines-cli?view=azure-devops).
+To create Azure pipeline with: 
+* Classical methods, see [Create the pipeline](https://docs.microsoft.com/en-us/azure/devops/pipelines/targets/azure-machine-learning?context=azure%2Fmachine-learning%2Fcontext%2Fml-context&view=azure-devops&tabs=yaml).
+* Azure Machine Learning SDK, see [Create and run machine learning pipelines with Azure Machine Learning SDK](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-create-machine-learning-pipelines?view=azure-devops).
+* Azure Machine Learning CLI, see [Create and run machine learning pipelines using components with the Azure Machine Learning CLI (Preview)](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-create-component-pipelines-cli?view=azure-devops).
 
