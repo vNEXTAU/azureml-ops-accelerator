@@ -4,7 +4,11 @@ sort: 1
 # Monitor Azure Machine Learning Workflows
 
 ## Monitor Machine Learning Model Performance
+<<<<<<< HEAD
 **Source**: [Start, monitor, and track run history](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-track-monitor-analyze-runs?tabs=python)
+=======
+Source: [Start, monitor, and track run history](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-track-monitor-analyze-runs?tabs=python)
+>>>>>>> 64827816565eb76127a9a3ee632ed86877bd5b0e
 
 The [Azure Machine Learning SDK for Python](https://docs.microsoft.com/en-us/python/api/overview/azure/ml/?view=azure-ml-py), [Machine Learning CLI](https://docs.microsoft.com/en-us/azure/machine-learning/reference-azure-machine-learning-cli), and [Azure Machine Learning studio](https://ml.azure.com/selectWorkspace) provide various methods to monitor, organize, and track your runs for training and experimentation. Your ML run history is an important part of an explainable and repeatable ML development process.
 
@@ -19,7 +23,11 @@ Useful evaluation metrics can be found [here](https://docs.microsoft.com/en-us/a
 
 ## Watch for Data Drift
 
+<<<<<<< HEAD
 **Source**: [Detect data drift (preview) on datasets](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-monitor-datasets?tabs=python)
+=======
+Source: [Detect data drift (preview) on datasets](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-monitor-datasets?tabs=python)
+>>>>>>> 64827816565eb76127a9a3ee632ed86877bd5b0e
 
 Data drift is one of the top reasons model accuracy degrades over time. For machine learning models, data drift is the change in model input data that leads to model performance degradation. Monitoring data drift helps detect these model performance issues.
 
