@@ -21,4 +21,3 @@ To create Azure pipeline with:
 * Classical methods, see [Create the pipeline](https://docs.microsoft.com/en-us/azure/devops/pipelines/targets/azure-machine-learning?context=azure%2Fmachine-learning%2Fcontext%2Fml-context&view=azure-devops&tabs=yaml).
 * Azure Machine Learning SDK, see [Create and run machine learning pipelines with Azure Machine Learning SDK](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-create-machine-learning-pipelines?view=azure-devops).
 * Azure Machine Learning CLI, see [Create and run machine learning pipelines using components with the Azure Machine Learning CLI (Preview)](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-create-component-pipelines-cli?view=azure-devops).
-

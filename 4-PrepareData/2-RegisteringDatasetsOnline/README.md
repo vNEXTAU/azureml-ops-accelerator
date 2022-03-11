@@ -39,26 +39,22 @@ Because your information is securely stored, you
 * Don't put authentication credentials or original data sources at risk.
 * No longer need to hard code them in your scripts.
 
-## Register datasets
-To complete the creation process, register your datasets with a workspace. Use the register() method to register datasets with your workspace in order to share them with others and reuse them across experiments in your workspace:
-```python
-titanic_ds = titanic_ds.register(workspace=workspace,
-                                 name='titanic_ds',
-                                 description='titanic training data')
-```
+## Register Datasets
+Source: [Import data into Azure Machine Learning designer](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-designer-import-data)
 
-Alternatively, it is also possible to register and upload your datasets directly to the data store that you have created:
-```python
-from azureml.core import Workspace, Datastore, Dataset
-import pandas as pd
+To complete the creation process, register your datasets with a workspace.
+You can register existing datasets 
+[programatically with the SDK](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-create-register-datasets#datasets-sdk) 
+or 
+[visually in Azure Machine Learning studio](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-connect-data-ui?tabs=credential#create-datasets).
 
-pandas_df = pd.read_csv('<path to your csv file>')
-ws = Workspace.from_config()
-datastore = Datastore.get(ws, '<name of your datastore>')
-dataset = Dataset.Tabular.register_pandas_dataframe(pandas_df, datastore, "dataset_from_pandas_df", show_progress=True)
-```
+If the component output data is in a tabular format, you must choose to register the output as a file dataset or tabular dataset.
 
-## Secure access to datasets
+* [File dataset](https://docs.microsoft.com/en-us/python/api/azureml-core/azureml.data.file_dataset.filedataset?view=azure-ml-py) registers the component's output folder as a file dataset. The output folder contains a data file and meta files that the designer uses internally. Select this option if you want to continue to use the registered dataset in the designer.
+
+* [Tabular dataset](https://docs.microsoft.com/en-us/python/api/azureml-core/azureml.data.tabulardataset?view=azure-ml-py) registers only the component's the output data file as a tabular dataset. This format is easily consumed by other tools, for example in Automated Machine Learning or the Python SDK. Select this option if you plan to use the registered dataset outside of the designer.
+
+## Secure Access to Datasets
 Source: [Secure data access in Azure Machine Learning](https://docs.microsoft.com/en-us/azure/machine-learning/concept-data#data-workflow)
 
 To ensure you securely connect to your Azure storage service, Azure Machine Learning requires that you have permission to access the corresponding data storage. This access depends on the authentication credentials used to register the datastore.
@@ -70,8 +66,16 @@ Azure Machine Learning makes it easy to connect to your data in the cloud. It pr
 * Data labeling
 * Data drift monitoring
 
+## Consume Datasets
+Source: [Train models with Azure Machine Learning datasets](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-train-with-datasets)
 
+If you have data that are not yet registered as a dataset, use it directly in your training script for your local or remote experiment by *mounting* or *downloading* it to your compute target.
 
+* When you mount a dataset, you attach the files referenced by the dataset to a directory (mount point) and make it available on the compute target. 
+
+* When you download a dataset, all the files referenced by the dataset will be downloaded to the compute target. 
+
+On the other hand, registered datasets are accessible both locally and remotely on compute clusters like the Azure Machine Learning compute. To access your registered dataset across experiments, use the following code to access your workspace and get the dataset that was used in your previously submitted run. By default, the get_by_name() method on the Dataset class returns the latest version of the dataset that's registered with the workspace.
 
 
 
