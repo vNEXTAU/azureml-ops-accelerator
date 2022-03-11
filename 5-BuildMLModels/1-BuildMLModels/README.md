@@ -2,7 +2,7 @@
 sort: 1
 ---
 # Building Machine Learning Models
-Source: [Train models with Azure Machine Learning](https://docs.microsoft.com/en-us/azure/machine-learning/concept-train-machine-learning-model)
+**Source**: [Train models with Azure Machine Learning](https://docs.microsoft.com/en-us/azure/machine-learning/concept-train-machine-learning-model)
 
 Azure Machine Learning provides several ways to train your models, from code-first solutions using the SDK to low-code solutions such as automated machine learning and the visual designer. Use the following list to determine which training method is right for you:
 
@@ -20,7 +20,7 @@ Azure Machine Learning provides several ways to train your models, from code-fir
   
 
 ## Training Machine Learning Models
-Source: [Configure and submit training runs](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-set-up-training-targets)
+**Source**: [Configure and submit training runs](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-set-up-training-targets)
 
 When training, it is common to start on your local computer, and then later scale out to a cloud-based cluster. With Azure Machine Learning, you can run your script on various compute targets without having to change your training script.
 
@@ -36,7 +36,7 @@ The code pattern to submit a training run is the same for all types of compute t
 5. Wait for the run to complete and save the model.
 
 ## Deploying Machine Learning Model
-Source: [Deploy machine learning models to Azure](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-and-where?tabs=azcli)
+**Source**: [Deploy machine learning models to Azure](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-and-where?tabs=azcli)
 
 <!-- A typical situation for a deployed machine learning service is that you need the following components:
 

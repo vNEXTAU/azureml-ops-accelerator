@@ -2,7 +2,7 @@
 sort: 3
 ---
 # Automate Machie Learning Workflows
-Source: [What are Azure Machine Learning pipelines?](https://docs.microsoft.com/en-us/azure/machine-learning/concept-ml-pipelines)
+**Source**: [What are Azure Machine Learning pipelines?](https://docs.microsoft.com/en-us/azure/machine-learning/concept-ml-pipelines)
 
 You can use a pipeline to automate the machine learning lifecycle. Some of the operations you can automate are:
 

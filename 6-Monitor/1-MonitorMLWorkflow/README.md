@@ -4,7 +4,7 @@ sort: 1
 # Monitor Azure Machine Learning Workflows
 
 ## Monitor Machine Learning Model Performance
-Source: [Start, monitor, and track run history](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-track-monitor-analyze-runs?tabs=python)
+**Source**: [Start, monitor, and track run history](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-track-monitor-analyze-runs?tabs=python)
 
 The [Azure Machine Learning SDK for Python](https://docs.microsoft.com/en-us/python/api/overview/azure/ml/?view=azure-ml-py), [Machine Learning CLI](https://docs.microsoft.com/en-us/azure/machine-learning/reference-azure-machine-learning-cli), and [Azure Machine Learning studio](https://ml.azure.com/selectWorkspace) provide various methods to monitor, organize, and track your runs for training and experimentation. Your ML run history is an important part of an explainable and repeatable ML development process.
 
@@ -19,7 +19,7 @@ Useful evaluation metrics can be found [here](https://docs.microsoft.com/en-us/a
 
 ## Watch for Data Drift
 
-Source: [Detect data drift (preview) on datasets](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-monitor-datasets?tabs=python)
+**Source**: [Detect data drift (preview) on datasets](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-monitor-datasets?tabs=python)
 
 Data drift is one of the top reasons model accuracy degrades over time. For machine learning models, data drift is the change in model input data that leads to model performance degradation. Monitoring data drift helps detect these model performance issues.
 
@@ -38,7 +38,7 @@ In Azure Machine Learning, you use dataset monitors to detect and alert for data
 
 ## Audit Machine Learning Workflows
 
-Source: [Audit and manage Azure Machine Learning](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-integrate-azure-policy)
+**Source**: [Audit and manage Azure Machine Learning](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-integrate-azure-policy)
 
 When teams collaborate on Azure Machine Learning, they may face varying requirements to the configuration and organization of resources. Machine learning teams may look for flexibility in how to organize workspaces for collaboration, or size compute clusters to the requirements of their use cases. In these scenarios, it may lead to most productivity if the application team can manage their own infrastructure.
 
@@ -51,13 +51,13 @@ For a complete list of the built-in policies for Azure Machine Learning, see [Bu
 To configure built-in policies, see [Configure built-in policies](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-integrate-azure-policy#configure-built-in-policies).
 
 ## Auto Trigger AML Workflows in Pipeline
-Source: [Trigger machine learning pipelines](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-trigger-published-pipeline)
+**Source**: [Trigger machine learning pipelines](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-trigger-published-pipeline)
 
 You can create a schedule based on elapsed time or on file-system changes. Time-based schedules can be used to take care of routine tasks, such as monitoring for data drift. Change-based schedules can be used to react to irregular or unpredictable changes, such as new data being uploaded or old data being edited.
 
 
 ### Auto Trigger with Event Grid
-Source: [Trigger applications, processes, or CI/CD workflows based on Azure Machine Learning events (preview)](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-use-event-grid)
+**Source**: [Trigger applications, processes, or CI/CD workflows based on Azure Machine Learning events (preview)](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-use-event-grid)
 
 Azure Machine Learning manages the entire lifecycle of machine learning process, including model training, model deployment, and monitoring. You can use Event Grid to react to Azure Machine Learning events, such as the completion of training runs, the registration and deployment of models, and the detection of data drift, by using modern serverless architectures. You can then subscribe and consume events such as run status changed, run completion, model registration, model deployment, and data drift detection within a workspace.
 
