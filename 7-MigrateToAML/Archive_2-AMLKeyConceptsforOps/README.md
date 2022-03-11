@@ -11,8 +11,7 @@ At a high level, the goal of MLOps is to close the gap between development and p
 
 There are differing levels of MLOps maturity. We recommend you review the [MLOps maturity model](https://docs.microsoft.com/en-us/azure/architecture/example-scenario/mlops/mlops-maturity-model) to see where your organization is and where your organization wants to be on the maturity scale.
 
-For more information consult the [Machine Learning DevOps Guide
-](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/ai-machine-learning-mlops).
+For more information consult the [Machine Learning DevOps Guide](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/ai-machine-learning-mlops).
 
 ## Data Preparation
 
@@ -28,8 +27,7 @@ Learn how to ingest data with ADF [here](https://docs.microsoft.com/en-us/azure/
 
 Data wrangling can be achieved in several ways in AML using Compute Instances, Designer, or Synapse Spark Pools.
 
-An [AML Compute Instance](
-https://docs.microsoft.com/en-us/azure/machine-learning/concept-compute-instance) is a managed cloud-based workstation for data scientists. It is a code first approach to data wrangling. In contrast, [AML Designer](https://docs.microsoft.com/en-us/azure/machine-learning/concept-designer) is a drag-and-drop interface used to train and deploy models in Azure Machine Learning.
+An [AML Compute Instance](https://docs.microsoft.com/en-us/azure/machine-learning/concept-compute-instance) is a managed cloud-based workstation for data scientists. It is a code first approach to data wrangling. In contrast, [AML Designer](https://docs.microsoft.com/en-us/azure/machine-learning/concept-designer) is a drag-and-drop interface used to train and deploy models in Azure Machine Learning.
 
 For data wrangling at scale Azure Machine Learning provides [Azure Synapse Analytics integration (preview)](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-data-prep-synapse-spark-pool) which allows you to attach an Apache Spark pool for interactive data exploration and preparation.
 
